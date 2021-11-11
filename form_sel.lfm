@@ -1,0 +1,207 @@
+object FormCargaMatris: TFormCargaMatris
+  Left = 426
+  Height = 544
+  Top = 187
+  Width = 801
+  Caption = 'FormCargaMatris'
+  ClientHeight = 544
+  ClientWidth = 801
+  OnShow = FormShow
+  LCLVersion = '2.0.12.0'
+  object pnlTitulo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 801
+    Align = alTop
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 48
+    ClientWidth = 799
+    Color = clGray
+    ParentColor = False
+    TabOrder = 0
+    object lbTitulo: TLabel
+      Left = 0
+      Height = 31
+      Top = 0
+      Width = 799
+      Align = alTop
+      Caption = 'Sistema de Ecuaciones Lineales'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -27
+      Font.Name = 'Tahoma'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object lbCantIncognitas: TLabel
+    Left = 16
+    Height = 21
+    Top = 136
+    Width = 230
+    Caption = 'Cantidad de incógnitas: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object edCantIncongnitas: TEdit
+    Left = 272
+    Height = 39
+    Top = 128
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object strGridMatris: TStringGrid
+    Left = 56
+    Height = 100
+    Top = 392
+    Width = 408
+    AutoFillColumns = True
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 0
+    TabOrder = 2
+  end
+  object btnIncongnitas: TButton
+    Left = 456
+    Height = 25
+    Top = 136
+    Width = 128
+    Caption = 'Aceptar'
+    OnClick = btnIncongnitasClick
+    TabOrder = 3
+  end
+  object lbCoeficientes: TLabel
+    Left = 16
+    Height = 21
+    Top = 200
+    Width = 187
+    Caption = 'Ingrese coeficiente:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object edCoeficiente: TEdit
+    Left = 272
+    Height = 39
+    Top = 192
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object btnOK: TButton
+    Left = 456
+    Height = 25
+    Top = 200
+    Width = 128
+    Caption = 'OK'
+    OnClick = btnOKClick
+    TabOrder = 5
+  end
+  object lbEcuacion: TLabel
+    Left = 31
+    Height = 1
+    Top = 254
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbX: TLabel
+    Left = 360
+    Height = 21
+    Top = 200
+    Width = 23
+    Caption = 'x1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnCargaEc: TButton
+    Left = 31
+    Height = 25
+    Top = 312
+    Width = 128
+    Caption = 'Cargar'
+    OnClick = btnCargaEcClick
+    TabOrder = 6
+  end
+  object btnBorrar: TButton
+    Left = 456
+    Height = 25
+    Top = 312
+    Width = 128
+    Caption = 'Borrar'
+    OnClick = btnBorrarClick
+    TabOrder = 7
+  end
+  object lbTipoMatriz: TLabel
+    Left = 16
+    Height = 21
+    Top = 80
+    Width = 104
+    Caption = 'Tipo Matriz'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object cmbTipoMtx: TComboBox
+    Left = 272
+    Height = 33
+    Top = 80
+    Width = 312
+    ItemHeight = 0
+    Items.Strings = (
+      'Matriz Diagonal'
+      'Matriz Triangular Superior'
+      'Matriz Triangular Inferior'
+      'Matriz Común'
+    )
+    TabOrder = 8
+    Text = 'SELECCIONE'
+  end
+end
